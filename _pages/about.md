@@ -242,7 +242,7 @@ Selected Works
   </div>
 </div>
 
-Education
+Bachelor Degree
 ======
 
 <div class="cv-block" id="education">
@@ -250,7 +250,7 @@ Education
     <img src="/images/education/bupt.png" alt="Beijing University of Posts and Telecommunications" />
   </div>
   <div class="cv-block-content">
-    <h2>Education</h2>
+    <h2>Bachelor Degree</h2>
     <p class="cv-meta">Beijing University of Posts and Telecommunications<br />B.S. in Computer Science and Technology<br />2023.09 -- expected 2027.07</p>
     <ul class="cv-list">
       <li>GPA 3.76/4.00, ranked 20/360 in the major</li>
@@ -260,7 +260,7 @@ Education
   </div>
 </div>
 
-Experience
+Internship
 ======
 
 <div class="cv-block" id="experience">
@@ -268,7 +268,7 @@ Experience
     <img src="/images/Experience/youtu.png" alt="Youtu internship" />
   </div>
   <div class="cv-block-content">
-    <h2>Experience</h2>
+    <h2>Internship</h2>
     <p class="cv-meta">Youtu<br />Research Intern<br />Expected start: 2026.07.01<br />End date: TBD</p>
     <ul class="cv-list">
       <li>Internship focused on machine learning and reinforcement learning related research</li>
