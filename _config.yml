@@ -23,7 +23,7 @@ repository               : "1BIMU/Academic_CV"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "avatar.jpg"
+  avatar           : "/images/blog_images/avatar.jpg"
   name             : "Wang Tianyi"
   pronouns         : # example: "she/her"  
   bio              : "Undergraduate student in Computer Science and Technology at BUPT, focused on post-training RL and optimizer implementation."
