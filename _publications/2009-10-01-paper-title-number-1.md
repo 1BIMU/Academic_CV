@@ -11,7 +11,7 @@ arxivurl: 'https://arxiv.org/abs/2604.08865'
 githuburl: 'https://github.com/sustech-nlp/SPPO'
 citation: 'Wang Tianyi et al. (2026). "SPPO: Sequence-Level PPO for Long-Horizon Reasoning." <i>ACL 2026 Main</i>.'
 header:
-	teaser: 500x300.png
+  teaser: /images/publications/SPPO.png
 ---
 
 This work identifies instability in token-level PPO for long-horizon reasoning and proposes a sequence-level optimization view with lower variance and lower memory overhead.

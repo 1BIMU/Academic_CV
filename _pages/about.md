@@ -71,7 +71,7 @@ Selected Works
 
 <div class="paper-grid">
   <article class="paper-card">
-    <img src="/images/500x300.png" alt="SPPO paper cover" />
+    <img src="/images/publications/SPPO.png" alt="SPPO paper cover" />
     <div class="paper-card-body">
       <h3>SPPO: Sequence-Level PPO for Long-Horizon Reasoning</h3>
       <div class="paper-meta">ACL 2026 Main · First Author</div>
@@ -84,7 +84,7 @@ Selected Works
   </article>
 
   <article class="paper-card">
-    <img src="/images/500x300.png" alt="APO paper cover" />
+    <img src="/images/publications/APO.png" alt="APO paper cover" />
     <div class="paper-card-body">
       <h3>Anchored Policy Optimization: Mitigating Exploration Collapse</h3>
       <div class="paper-meta">ICML Submission · First Author</div>
@@ -92,6 +92,18 @@ Selected Works
       <div class="paper-links">
         <a href="https://arxiv.org/abs/2602.05717" target="_blank" rel="noopener">arXiv</a>
         <a href="https://github.com/1BIMU/APO_OFFICAL" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </article>
+
+  <article class="paper-card">
+    <img src="/images/publications/DyJR.png" alt="DyJR paper cover" />
+    <div class="paper-card-body">
+      <h3>DyJR: Preserving Diversity in Reinforcement Learning with Verifiable Rewards</h3>
+      <div class="paper-meta">Under Review · First Author</div>
+      <div class="paper-summary">Introduces Dynamic Jensen-Shannon Replay to preserve diversity in reinforcement learning through a verifiable rewards mechanism.</div>
+      <div class="paper-links">
+        <a href="https://arxiv.org/abs/2603.16157" target="_blank" rel="noopener">arXiv</a>
       </div>
     </div>
   </article>

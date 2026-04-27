@@ -11,7 +11,7 @@ arxivurl: 'https://arxiv.org/abs/2602.05717'
 githuburl: 'https://github.com/1BIMU/APO_OFFICAL'
 citation: 'Wang Tianyi et al. (2026). "Anchored Policy Optimization: Mitigating Exploration Collapse via Support-Constrained Rectification." <i>ICML Submission</i>.'
 header:
-	teaser: 500x300.png
+  teaser: /images/publications/APO.png
 ---
 
 This work analyzes exploration collapse in RLVR and proposes APO to balance stability and efficiency through support coverage on high-confidence regions.
