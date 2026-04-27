@@ -7,45 +7,94 @@ redirect_from:
   - /about.html
 ---
 
-I am Wang Tianyi, an undergraduate student in Computer Science and Technology at Beijing University of Posts and Telecommunications. My current focus is post-training algorithms, especially reinforcement learning. I also highly interested in optimizer design, implementation, and reproduction.
+I am Wang Tianyi, an undergraduate student in Computer Science and Technology at Beijing University of Posts and Telecommunications. My current focus is post-training algorithms, especially reinforcement learning. I am also highly interested in optimizer design, implementation, and reproduction.
 
 If you want a quick overview of my work, start with these pages:
 
 * [CV](/cv/)
 * [Publications](/publications/)
-* [Talks](/talks/)
-* [Teaching](/teaching/)
+* [Blog Posts](/year-archive/)
 
-
-Getting started
+Selected Works
 ======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this template](https://github.com/academicpages/academicpages.github.io) by clicking the "Use this template" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](https://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
 
-Site-wide configuration
-------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
+<style>
+.paper-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
 
-Create content & metadata
-------
-For site content, there is one Markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a Markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each Markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
+.paper-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
 
-**Markdown generator**
+.paper-card img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+}
 
-The repository includes [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual Markdown files that will be properly formatted for the Academic Pages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the Markdown files, then commit and push them to the GitHub repository.
+.paper-card-body {
+  padding: 0.9rem 1rem 1rem;
+}
 
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and Markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
+.paper-card-body h3 {
+  margin: 0.2rem 0 0.55rem;
+  font-size: 1rem;
+  line-height: 1.35;
+}
 
-Example: editing a Markdown file for a talk
-![Editing a Markdown file for a talk](/images/editing-talk.png)
+.paper-meta {
+  color: #4b5563;
+  font-size: 0.88rem;
+  margin-bottom: 0.6rem;
+}
 
-For more info
-------
-More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/), the [growing wiki](https://github.com/academicpages/academicpages.github.io/wiki), and you can always [ask a question on GitHub](https://github.com/academicpages/academicpages.github.io/discussions). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+.paper-summary {
+  font-size: 0.92rem;
+  line-height: 1.55;
+  margin-bottom: 0.75rem;
+}
+
+.paper-links a {
+  margin-right: 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+</style>
+
+<div class="paper-grid">
+  <article class="paper-card">
+    <img src="/images/500x300.png" alt="SPPO paper cover" />
+    <div class="paper-card-body">
+      <h3>SPPO: Sequence-Level PPO for Long-Horizon Reasoning</h3>
+      <div class="paper-meta">ACL 2026 Main · First Author</div>
+      <div class="paper-summary">Reformulates long-horizon reasoning as a sequence-level contextual bandit with a decoupled scalar value function to improve stability and reduce memory cost.</div>
+      <div class="paper-links">
+        <a href="https://arxiv.org/abs/2604.08865" target="_blank" rel="noopener">arXiv</a>
+        <a href="https://github.com/sustech-nlp/SPPO" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </article>
+
+  <article class="paper-card">
+    <img src="/images/500x300.png" alt="APO paper cover" />
+    <div class="paper-card-body">
+      <h3>Anchored Policy Optimization: Mitigating Exploration Collapse</h3>
+      <div class="paper-meta">ICML Submission · First Author</div>
+      <div class="paper-summary">Introduces support-constrained rectification for RLVR training to mitigate exploration collapse and improve both Pass@1 and response diversity.</div>
+      <div class="paper-links">
+        <a href="https://arxiv.org/abs/2602.05717" target="_blank" rel="noopener">arXiv</a>
+        <a href="https://github.com/1BIMU/APO_OFFICAL" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </article>
+
+</div>
+

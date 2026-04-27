@@ -9,8 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
+<h2 id="education">Education</h2>
+
 * Beijing University of Posts and Telecommunications, B.S. in Computer Science and Technology, 2023.09 -- expected 2027.07
 * GPA 3.76/4.00, ranked 20/360 in the major
 * CET-6 503, CET-4 571
@@ -21,8 +21,8 @@ Research Interests
 * Optimizer design and implementation
 * Reproduction and engineering work with PyTorch and TensorFlow
 
-Research Experience
-======
+<h2 id="experience">Experience</h2>
+
 * SPPO: Sequence-Level PPO for Long-Horizon Reasoning
   * Reformulated long-horizon reasoning as a sequence-level contextual bandit to reduce unstable temporal credit assignment and memory overhead
   * GitHub: https://github.com/sustech-nlp/SPPO
