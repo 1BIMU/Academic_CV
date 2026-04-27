@@ -38,12 +38,17 @@ Selected Works
   flex-shrink: 0;
   width: 240px;
   height: 180px;
+  background: #f9fafb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .publication-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  padding: 8px;
   border-radius: 6px;
 }
 
