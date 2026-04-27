@@ -13,4 +13,32 @@
     await mermaid.run({querySelector:'code.language-mermaid'});
 </script>
 
+<!-- Smooth scroll for anchor links -->
+<script>
+document.addEventListener('click', function(e) {
+  var link = e.target.closest('a[href]');
+  if (!link) return;
+  var url = new URL(link.href);
+  if (url.origin === location.origin
+      && url.pathname === location.pathname
+      && url.hash) {
+    var target = document.querySelector(url.hash);
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth' });
+      history.pushState(null, '', url.hash);
+    }
+  }
+});
+if (location.hash) {
+  var target = document.querySelector(location.hash);
+  if (target) {
+    window.scrollTo(0, 0);
+    setTimeout(function() {
+      target.scrollIntoView({ behavior: 'smooth' });
+    }, 100);
+  }
+}
+</script>
+
 <!-- end custom footer snippets -->

@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Tianyi Wang | Academic Homepage"
+title: "Tianyi Wang"
 author_profile: true
 redirect_from: 
   - /about/

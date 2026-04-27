@@ -9,8 +9,8 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "Tianyi Wang | Academic Homepage"
-masthead_title           : false
+title                    : "Tianyi Wang"
+masthead_title           : "Tianyi Wang"
 title_separator          : "-"
 name                     : &name "Tianyi Wang"
 description              : &description "Undergraduate student in Computer Science and Technology at Beijing University of Posts and Telecommunications, focused on post-training algorithms and optimizer design/implementation"   # Update this with a general description of your site, this is the default if not overridden by a page
