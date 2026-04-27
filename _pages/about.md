@@ -213,7 +213,7 @@ Selected Works
     <div class="publication-content">
       <div>
         <h3 class="publication-title">Anchored Policy Optimization: Mitigating Exploration Collapse</h3>
-        <div class="publication-meta">ICML Submission · Co-first Author</div>
+        <div class="publication-meta">Under Review · Co-first Author</div>
         <div class="publication-authors"><strong>Tianyi Wang</strong>*, Long Li*, Hongcan Guo, Yibiao Chen, Yixia Li, Yong Wang, Yun Chen, Guanhua Chen</div>
         <div class="publication-summary">Introduces support-constrained rectification for RLVR training to mitigate exploration collapse and improve both Pass@1 and response diversity.</div>
       </div>
