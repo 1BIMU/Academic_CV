@@ -15,10 +15,10 @@ main:
     url: https://bimu.site
 
   - title: "Education"
-    url: /cv/#education
+    url: /cv-details/#education
 
   - title: "Experience"
-    url: /cv/#experience
+    url: /cv-details/#experience
     
   - title: "CV"
     url: /cv/

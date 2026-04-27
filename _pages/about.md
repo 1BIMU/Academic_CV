@@ -38,7 +38,6 @@ Selected Works
   flex-shrink: 0;
   width: 240px;
   height: 180px;
-  background: #f9fafb;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -48,8 +47,10 @@ Selected Works
   width: 100%;
   height: 100%;
   object-fit: contain;
-  padding: 8px;
-  border-radius: 6px;
+  padding: 0;
+  display: block;
+  background: #ffffff;
+  border-radius: 0;
 }
 
 .publication-content {

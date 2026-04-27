@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: single
 title: "CV"
 permalink: /cv/
 author_profile: true
@@ -9,42 +9,17 @@ redirect_from:
 
 {% include base_path %}
 
-<h2 id="education">Education</h2>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const link = document.createElement('a');
+  link.href = '{{ "/main_en.pdf" | relative_url }}';
+  link.download = 'Wang_Tianyi_CV.pdf';
+  link.style.display = 'none';
+  document.body.appendChild(link);
+  link.click();
 
-* Beijing University of Posts and Telecommunications, B.S. in Computer Science and Technology, 2023.09 -- expected 2027.07
-* GPA 3.76/4.00, ranked 20/360 in the major
-* CET-6 503, CET-4 571
-
-Research Interests
-======
-* Post-training algorithms, especially reinforcement learning
-* Optimizer design and implementation
-* Reproduction and engineering work with PyTorch and TensorFlow
-
-<h2 id="experience">Experience</h2>
-
-* SPPO: Sequence-Level PPO for Long-Horizon Reasoning
-  * Reformulated long-horizon reasoning as a sequence-level contextual bandit to reduce unstable temporal credit assignment and memory overhead
-  * GitHub: https://github.com/sustech-nlp/SPPO
-
-* Anchored Policy Optimization (APO)
-  * Proposed support-constrained rectification for exploration collapse in RLVR
-  * GitHub: https://github.com/1BIMU/APO_OFFICAL
-
-* PyTorch Implementation: Spectral-Sphere-Optimizer (SSO)
-  * Implemented and merged a PyTorch version of the SSO optimizer
-  * GitHub: https://github.com/Unakar/Spectral-Sphere-Optimizer
-
-Skills
-======
-* Python
-* C
-* Java
-* PyTorch
-* TensorFlow
-* MySQL
-
-Honors
-======
-* Third-Class Scholarship, 2023-2024 academic year
-* Third-Class Scholarship, 2024-2025 academic year
+  const message = document.createElement('p');
+  message.innerHTML = 'Your CV download should start automatically. If it does not, <a href="{{ "/main_en.pdf" | relative_url }}" download>click here</a>.';
+  document.body.appendChild(message);
+});
+</script>
