@@ -94,13 +94,29 @@ Selected Works
   background: #2563eb;
   color: #ffffff;
 }
+
+.paper-authors {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+authors"><strong>Tianyi Wang</strong>, Yixia Li, Long Li, Yibiao Chen, Shaohan Huang, Yun Chen, Peng Li, Yang Liu, Guanhua Chen</div>
+      <div class="paper-
+.paper-authors strong {
+  color: #111;
+  font-weight: 600;
+  font-style: normal;
+}
 </style>
 
 <div class="paper-grid">
   <article class="paper-card">
     <img src="/images/publications/SPPO.png" alt="SPPO paper cover" />
     <div class="paper-card-body">
-      <h3>SPPO: Sequence-Level PPO for Long-Horizon Reasoning</h3>
+      <h3>SPPO: Sequenceauthors"><strong>Tianyi Wang</strong>, Long Li, Hongcan Guo, Yibiao Chen, Yixia Li, Yong Wang, Yun Chen, Guanhua Chen</div>
+      <div class="paper--Level PPO for Long-Horizon Reasoning</h3>
       <div class="paper-meta">ACL 2026 Main · First Author</div>
       <div class="paper-summary">Reformulates long-horizon reasoning as a sequence-level contextual bandit with a decoupled scalar value function to improve stability and reduce memory cost.</div>
       <div class="paper-links">
@@ -125,7 +141,8 @@ Selected Works
 
   <article class="paper-card">
     <img src="/images/publications/DyJR.png" alt="DyJR paper cover" />
-    <div class="paper-card-body">
+    <div class="paper-card-body"></div>
+      <div class="paper-authors">Long Li, Zhijian Zhou, <strong>Tianyi Wang</strong>, Weidi Xu, Zuming Huang, Wei Chu, Zhe Wang, Shirui Pan, Chao Qu, Yuan Qi
       <h3>DyJR: Preserving Diversity in Reinforcement Learning with Verifiable Rewards</h3>
       <div class="paper-meta">Under Review · First Author</div>
       <div class="paper-summary">Introduces Dynamic Jensen-Shannon Replay to preserve diversity in reinforcement learning through a verifiable rewards mechanism.</div>
