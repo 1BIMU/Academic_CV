@@ -73,7 +73,7 @@ redirect_from:
 
 <div class="cv-block" id="education">
   <div class="cv-block-image">
-    <img src="{{ '/images/education/bupt.png' | relative_url }}" alt="Beijing University of Posts and Telecommunications" />
+    <img src="/images/education/bupt.png" alt="Beijing University of Posts and Telecommunications" />
   </div>
   <div class="cv-block-content">
     <h2>Education</h2>
@@ -97,7 +97,7 @@ redirect_from:
 
 <div class="cv-block" id="experience">
   <div class="cv-block-image">
-    <img src="{{ '/images/Experience/youtu.png' | relative_url }}" alt="Youtu internship" />
+    <img src="/images/Experience/youtu.png" alt="Youtu internship" />
   </div>
   <div class="cv-block-content">
     <h2>Experience</h2>
