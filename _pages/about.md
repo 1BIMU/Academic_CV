@@ -11,7 +11,7 @@ I am Wang Tianyi, an undergraduate student in Computer Science and Technology at
 
 If you want a quick overview of my work, start with these pages:
 
-* [CV](/cv/)
+* [CV](https://github.com/1BIMU/Academic_CV/raw/refs/heads/master/main_en.pdf)
 * [Publications](/publications/)
 * [Blog Posts](/year-archive/)
 
