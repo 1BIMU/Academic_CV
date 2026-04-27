@@ -21,9 +21,16 @@ Selected Works
 <style>
 .paper-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.25rem;
-  margin-top: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .paper-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
 }
 
 .paper-card {
@@ -32,40 +39,60 @@ Selected Works
   overflow: hidden;
   background: #ffffff;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.3s ease;
+}
+
+.paper-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
 .paper-card img {
   width: 100%;
-  height: 170px;
+  height: 280px;
   object-fit: cover;
 }
 
 .paper-card-body {
-  padding: 0.9rem 1rem 1rem;
+  padding: 1.5rem 1.75rem;
 }
 
 .paper-card-body h3 {
-  margin: 0.2rem 0 0.55rem;
-  font-size: 1rem;
-  line-height: 1.35;
+  margin: 0 0 0.75rem;
+  font-size: 1.15rem;
+  line-height: 1.4;
+  font-weight: 600;
 }
 
 .paper-meta {
   color: #4b5563;
-  font-size: 0.88rem;
-  margin-bottom: 0.6rem;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
 }
 
 .paper-summary {
-  font-size: 0.92rem;
-  line-height: 1.55;
-  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  margin-bottom: 1.25rem;
+  color: #555;
 }
 
 .paper-links a {
-  margin-right: 0.75rem;
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  margin-right: 0.5rem;
+  background: #f0f4f8;
+  border-radius: 6px;
   font-size: 0.9rem;
   font-weight: 600;
+  color: #2563eb;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.paper-links a:hover {
+  background: #2563eb;
+  color: #ffffff;
 }
 </style>
 
