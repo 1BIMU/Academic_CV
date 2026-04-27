@@ -9,5 +9,5 @@ venue: 'Under Review'
 arxivurl: 'https://arxiv.org/abs/2603.16157'
 header:
   teaser: /images/publications/DyJR.png
-citation: 'Wang Tianyi et al. "DyJR: Preserving Diversity in Reinforcement Learning with Verifiable Rewards via Dynamic Jensen-Shannon Replay" (2026).'
+citation: 'Tianyi Wang et al. "DyJR: Preserving Diversity in Reinforcement Learning with Verifiable Rewards via Dynamic Jensen-Shannon Replay" (2026).'
 ---

@@ -39,7 +39,7 @@ arxivurl: 'https://arxiv.org/abs/2604.08865'
 githuburl: 'https://github.com/sustech-nlp/SPPO'
 header:
   teaser: /images/publications/sppo-cover.png
-citation: 'Wang Tianyi et al. (2026). "SPPO..." <i>ACL 2026 Main</i>.'
+citation: 'Tianyi Wang et al. (2026). "SPPO..." <i>ACL 2026 Main</i>.'
 ---
 ```
 

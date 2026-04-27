@@ -1,13 +1,13 @@
 ---
 permalink: /
-title: "Wang Tianyi | Academic Homepage"
+title: "Tianyi Wang | Academic Homepage"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-I am Wang Tianyi, an undergraduate student in Computer Science and Technology at Beijing University of Posts and Telecommunications. My current focus is post-training algorithms, especially reinforcement learning. I am also highly interested in optimizer design, implementation, and reproduction.
+I am Tianyi Wang, an undergraduate student in Computer Science and Technology at Beijing University of Posts and Telecommunications. My current focus is post-training algorithms, especially reinforcement learning. I am also highly interested in optimizer design, implementation, and reproduction.
 
 If you want a quick overview of my work, start with these pages:
 
