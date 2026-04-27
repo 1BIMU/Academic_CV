@@ -15,10 +15,10 @@ main:
     url: https://bimu.site
 
   - title: "Education"
-    url: /cv-details/#education
+    url: /#education
 
   - title: "Experience"
-    url: /cv-details/#experience
+    url: /#experience
     
   - title: "CV"
     url: https://github.com/1BIMU/Academic_CV/raw/refs/heads/master/main_en.pdf
