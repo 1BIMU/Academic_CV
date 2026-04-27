@@ -195,8 +195,8 @@ Selected Works
     <div class="publication-content">
       <div>
         <h3 class="publication-title">SPPO: Sequence-Level PPO for Long-Horizon Reasoning</h3>
-        <div class="publication-meta">ACL 2026 Main Conference · First Author</div>
-        <div class="publication-authors"><strong>Tianyi Wang</strong>, Yixia Li, Long Li, Yibiao Chen, Shaohan Huang, Yun Chen, Peng Li, Yang Liu, Guanhua Chen</div>
+        <div class="publication-meta">ACL 2026 Main Conference · Co-first Author</div>
+        <div class="publication-authors"><strong>Tianyi Wang</strong>*, Yixia Li*, Long Li, Yibiao Chen, Shaohan Huang, Yun Chen, Peng Li, Yang Liu, Guanhua Chen</div>
         <div class="publication-summary">Reformulates long-horizon reasoning as a sequence-level contextual bandit with a decoupled scalar value function to improve stability and reduce memory cost.</div>
       </div>
       <div class="publication-links">
@@ -213,8 +213,8 @@ Selected Works
     <div class="publication-content">
       <div>
         <h3 class="publication-title">Anchored Policy Optimization: Mitigating Exploration Collapse</h3>
-        <div class="publication-meta">ICML Submission · First Author</div>
-        <div class="publication-authors"><strong>Tianyi Wang</strong>, Long Li, Hongcan Guo, Yibiao Chen, Yixia Li, Yong Wang, Yun Chen, Guanhua Chen</div>
+        <div class="publication-meta">ICML Submission · Co-first Author</div>
+        <div class="publication-authors"><strong>Tianyi Wang</strong>*, Long Li*, Hongcan Guo, Yibiao Chen, Yixia Li, Yong Wang, Yun Chen, Guanhua Chen</div>
         <div class="publication-summary">Introduces support-constrained rectification for RLVR training to mitigate exploration collapse and improve both Pass@1 and response diversity.</div>
       </div>
       <div class="publication-links">

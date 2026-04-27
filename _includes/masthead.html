@@ -14,8 +14,19 @@
             {% else %}
               {% assign domain = base_path %}
             {% endif %}
+            {% assign link_hash = link.url | split: '#' | last %}
+            {% assign link_path = link.url | split: '#' | first %}
+            {% if link_path == '/' and link.url contains '#' %}
+              {% assign is_anchor_to_home = true %}
+            {% else %}
+              {% assign is_anchor_to_home = false %}
+            {% endif %}
             <li class="masthead__menu-item {% if page.url contains link.url and link.url != '/' %}selected{% endif %}">
-              <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
+              {% if is_anchor_to_home and page.url == '/' %}
+                <a href="#{{ link_hash }}" class="smooth-scroll">{{ link.title }}</a>
+              {% else %}
+                <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
+              {% endif %}
             </li>
           {% endfor %}
           <li id="theme-toggle" class="masthead__menu-item persist tail">

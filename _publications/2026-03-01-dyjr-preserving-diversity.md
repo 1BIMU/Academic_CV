@@ -7,6 +7,7 @@ excerpt: 'Introduces Dynamic Jensen-Shannon Replay to preserve diversity in rein
 date: 2026-03-01
 venue: 'Under Review'
 arxivurl: 'https://arxiv.org/abs/2603.16157'
+authors: 'Long Li, Zhijian Zhou, <strong>Tianyi Wang</strong>, Weidi Xu, Zuming Huang, Wei Chu, Zhe Wang, Shirui Pan, Chao Qu, Yuan Qi'
 header:
   teaser: /images/publications/DyJR.png
 citation: 'Tianyi Wang et al. "DyJR: Preserving Diversity in Reinforcement Learning with Verifiable Rewards via Dynamic Jensen-Shannon Replay" (2026).'

@@ -5,32 +5,148 @@ permalink: /publications/
 author_profile: true
 ---
 
+{% include base_path %}
+
 {% if site.author.googlescholar %}
   <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
 {% endif %}
 
-{% include base_path %}
+<style>
+.pub-card {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+  padding: 1.5rem;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+}
+.pub-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+.pub-card-image {
+  flex-shrink: 0;
+  width: 240px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pub-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  background: #ffffff;
+  border-radius: 0;
+}
+.pub-card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.pub-card-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+  line-height: 1.4;
+  color: #111;
+}
+.pub-card-title a {
+  color: #111;
+  text-decoration: none;
+}
+.pub-card-title a:hover {
+  color: #2563eb;
+}
+.pub-card-meta {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+}
+.pub-card-authors {
+  font-size: 0.85rem;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+  font-style: italic;
+}
+.pub-card-authors strong {
+  font-weight: 600;
+  color: #111;
+  font-style: normal;
+}
+.pub-card-excerpt {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 1rem;
+}
+.pub-card-links {
+  display: flex;
+  gap: 0.75rem;
+}
+.pub-card-links a {
+  display: inline-block;
+  padding: 0.45rem 1rem;
+  background: #f0f4f8;
+  color: #2563eb;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+.pub-card-links a:hover {
+  background: #2563eb;
+  color: #ffffff;
+}
+@media (max-width: 768px) {
+  .pub-card {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .pub-card-image {
+    width: 100%;
+    height: 200px;
+  }
+}
+</style>
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
+<div class="pub-list">
+  {% assign sorted_pubs = site.publications | sort: 'date' | reverse %}
+  {% for post in sorted_pubs %}
+  <div class="pub-card">
+    {% if post.header.teaser %}
+    <div class="pub-card-image">
+      <img src="{{ base_path }}{{ post.header.teaser }}" alt="{{ post.title }}" />
+    </div>
+    {% endif %}
+    <div class="pub-card-content">
+      <div>
+        <h3 class="pub-card-title">
+          <a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a>
+        </h3>
+        <div class="pub-card-meta">
+          {{ post.venue }}{% if post.author_note %} · {{ post.author_note }}{% endif %}
+        </div>
+        {% if post.authors %}
+        <div class="pub-card-authors">{{ post.authors }}</div>
+        {% endif %}
+        {% if post.excerpt %}
+        <div class="pub-card-excerpt">{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</div>
+        {% endif %}
+      </div>
+      <div class="pub-card-links">
+        {% if post.arxivurl %}<a href="{{ post.arxivurl }}" target="_blank">arXiv</a>{% endif %}
+        {% if post.githuburl %}<a href="{{ post.githuburl }}" target="_blank">GitHub</a>{% endif %}
+        {% if post.paperurl and post.paperurl != post.arxivurl %}<a href="{{ post.paperurl }}" target="_blank">Paper</a>{% endif %}
+        {% if post.slidesurl %}<a href="{{ post.slidesurl }}" target="_blank">Slides</a>{% endif %}
+      </div>
+    </div>
+  </div>
   {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
-
-
-
+</div>

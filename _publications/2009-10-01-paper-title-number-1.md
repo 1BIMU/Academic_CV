@@ -9,6 +9,8 @@ venue: 'ACL 2026 Main'
 paperurl: 'https://arxiv.org/abs/2604.08865'
 arxivurl: 'https://arxiv.org/abs/2604.08865'
 githuburl: 'https://github.com/sustech-nlp/SPPO'
+authors: '<strong>Tianyi Wang</strong>*, Yixia Li*, Long Li, Yibiao Chen, Shaohan Huang, Yun Chen, Peng Li, Yang Liu, Guanhua Chen'
+author_note: 'Co-first Author'
 citation: 'Tianyi Wang et al. (2026). "SPPO: Sequence-Level PPO for Long-Horizon Reasoning." <i>ACL 2026 Main</i>.'
 header:
   teaser: /images/publications/SPPO.png
