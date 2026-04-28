@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am Tianyi Wang, an undergraduate student in Computer Science and Technology at Beijing University of Posts and Telecommunications. My current focus is post-training algorithms, especially reinforcement learning. I am also highly interested in optimizer design, implementation, and reproduction.
+Hi!👋🏻 I am Tianyi Wang, an undergraduate student majored in Computer Science at Beijing University of Posts and Telecommunications. My current focus is post-training algorithms, especially reinforcement learning. I am also highly interested in optimizer design, implementation, and reproduction.
 
 If you want a quick overview of my work, start with these pages:
 
@@ -242,7 +242,7 @@ Selected Works
   </div>
 </div>
 
-Bachelor Degree
+Education
 ======
 
 <div class="cv-block" id="education">
@@ -260,7 +260,7 @@ Bachelor Degree
   </div>
 </div>
 
-Internship
+Experience
 ======
 
 <div class="cv-block" id="experience">
