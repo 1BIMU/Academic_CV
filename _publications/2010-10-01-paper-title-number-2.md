@@ -5,13 +5,13 @@ category: conferences
 permalink: /publication/anchored-policy-optimization
 excerpt: 'Introduces support-constrained rectification for RLVR to mitigate exploration collapse and improve both Pass@1 and response diversity.'
 date: 2026-02-01
-venue: 'Under Review'
+venue: 'ICML 2026'
 paperurl: 'https://arxiv.org/abs/2602.05717'
 arxivurl: 'https://arxiv.org/abs/2602.05717'
 githuburl: 'https://github.com/1BIMU/APO_OFFICAL'
 authors: '<strong>Tianyi Wang</strong>*, Long Li*, Hongcan Guo, Yibiao Chen, Yixia Li, Yong Wang, Yun Chen, Guanhua Chen'
 author_note: 'Co-first Author'
-citation: 'Tianyi Wang et al. (2026). "Anchored Policy Optimization: Mitigating Exploration Collapse via Support-Constrained Rectification." <i>Under Review</i>.'
+citation: 'Tianyi Wang et al. (2026). "Anchored Policy Optimization: Mitigating Exploration Collapse via Support-Constrained Rectification." <i>ICML 2026</i>.'
 header:
   teaser: /images/publications/APO.png
 ---
