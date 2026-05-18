@@ -195,7 +195,7 @@ Selected Works
     <div class="publication-content">
       <div>
         <h3 class="publication-title">SPPO: Sequence-Level PPO for Long-Horizon Reasoning</h3>
-        <div class="publication-meta">ACL 2026 Main Conference · Co-first Author</div>
+        <div class="publication-meta">ACL 2026 Oral · Co-first Author</div>
         <div class="publication-authors"><strong>Tianyi Wang</strong>*, Yixia Li*, Long Li, Yibiao Chen, Shaohan Huang, Yun Chen, Peng Li, Yang Liu, Guanhua Chen</div>
         <div class="publication-summary">Reformulates long-horizon reasoning as a sequence-level contextual bandit with a decoupled scalar value function to improve stability and reduce memory cost.</div>
       </div>

@@ -5,13 +5,21 @@ category: conferences
 permalink: /publication/sppo-sequence-level-ppo
 excerpt: 'Reformulates long-horizon reasoning as a sequence-level contextual bandit with a decoupled scalar value function to improve stability and reduce memory cost.'
 date: 2026-04-01
-venue: 'ACL 2026 Main'
+venue: 'ACL 2026 Oral'
 paperurl: 'https://arxiv.org/abs/2604.08865'
 arxivurl: 'https://arxiv.org/abs/2604.08865'
 githuburl: 'https://github.com/sustech-nlp/SPPO'
 authors: '<strong>Tianyi Wang</strong>*, Yixia Li*, Long Li, Yibiao Chen, Shaohan Huang, Yun Chen, Peng Li, Yang Liu, Guanhua Chen'
 author_note: 'Co-first Author'
-citation: 'Tianyi Wang et al. (2026). "SPPO: Sequence-Level PPO for Long-Horizon Reasoning." <i>ACL 2026 Main</i>.'
+citation: '@misc{wang2026spposequencelevelppolonghorizon,
+      title={SPPO: Sequence-Level PPO for Long-Horizon Reasoning Tasks},
+      author={Tianyi Wang and Yixia Li and Long Li and Yibiao Chen and Shaohan Huang and Yun Chen and Peng Li and Yang Liu and Guanhua Chen},
+      year={2026},
+      eprint={2604.08865},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2604.08865},
+}'
 header:
   teaser: /images/publications/SPPO.png
 ---

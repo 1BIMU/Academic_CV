@@ -10,5 +10,13 @@ arxivurl: 'https://arxiv.org/abs/2603.16157'
 authors: 'Long Li, Zhijian Zhou, <strong>Tianyi Wang</strong>, Weidi Xu, Zuming Huang, Wei Chu, Zhe Wang, Shirui Pan, Chao Qu, Yuan Qi'
 header:
   teaser: /images/publications/DyJR.png
-citation: 'Tianyi Wang et al. "DyJR: Preserving Diversity in Reinforcement Learning with Verifiable Rewards via Dynamic Jensen-Shannon Replay" (2026).'
+citation: '@misc{li2026dyjrpreservingdiversityreinforcement,
+      title={DyJR: Preserving Diversity in Reinforcement Learning with Verifiable Rewards via Dynamic Jensen-Shannon Replay},
+      author={Long Li and Zhijian Zhou and Tianyi Wang and Weidi Xu and Zuming Huang and Wei Chu and Zhe Wang and Shirui Pan and Chao Qu and Yuan Qi},
+      year={2026},
+      eprint={2603.16157},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2603.16157},
+}'
 ---
