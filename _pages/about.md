@@ -118,6 +118,49 @@ Selected Works
   color: #ffffff;
 }
 
+html[data-theme="dark"] .publication {
+  background: #2d2d2d;
+  border-color: #444;
+}
+
+html[data-theme="dark"] .publication:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+html[data-theme="dark"] .publication-image img {
+  background: #2d2d2d;
+}
+
+html[data-theme="dark"] .publication-title {
+  color: #f3f3f3;
+}
+
+html[data-theme="dark"] .publication-meta {
+  color: #aaa;
+}
+
+html[data-theme="dark"] .publication-authors {
+  color: #bbb;
+}
+
+html[data-theme="dark"] .publication-authors strong {
+  color: #f3f3f3;
+}
+
+html[data-theme="dark"] .publication-summary {
+  color: #bbb;
+}
+
+html[data-theme="dark"] .publication-links a {
+  background: #3a3a3a;
+  color: #5cb3f0;
+}
+
+html[data-theme="dark"] .publication-links a:hover {
+  background: #5cb3f0;
+  color: #1a1a1a;
+}
+
 @media (max-width: 768px) {
   .publication {
     flex-direction: column;
@@ -174,6 +217,19 @@ Selected Works
   margin: 0;
   padding-left: 1.2rem;
   line-height: 1.7;
+}
+
+html[data-theme="dark"] .cv-block {
+  background: #2d2d2d;
+  border-color: #444;
+}
+
+html[data-theme="dark"] .cv-block-image img {
+  background: #2d2d2d;
+}
+
+html[data-theme="dark"] .cv-meta {
+  color: #bbb;
 }
 
 @media (max-width: 768px) {
