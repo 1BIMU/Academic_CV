@@ -15,6 +15,12 @@ If you want a quick overview of my work, start with these pages:
 * [Publications](/publications/)
 * [Blog Posts](/year-archive/)
 
+News
+
+* 2026.04 🎉 SPPO was accepted to ACL 2026
+* 2026.04 🎉 APO was accepted to ICML 2026
+* 2026.05 🎉 SPPO was selected as Oral presentation in ACL
+
 Selected Works
 ======
 
