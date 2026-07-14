@@ -58,14 +58,20 @@ redirect_from:
   </div>
   <div class="profile-row">
     <article class="profile-card reveal" data-reveal id="education">
-      <span class="section-kicker">Education</span>
-      <h3>BUPT</h3>
-      <p>2023–2027</p>
+      <div class="profile-card__content">
+        <span class="section-kicker">Education</span>
+        <h3>BUPT</h3>
+        <p>2023–2027</p>
+      </div>
+      <img class="profile-card__logo profile-card__logo--wide" src="/images/education/bupt.png" alt="BUPT logo" loading="lazy" />
     </article>
     <article class="profile-card reveal" data-reveal id="experience">
-      <span class="section-kicker">Experience</span>
-      <h3>Youtu</h3>
-      <p>Research Intern · 2026–Present</p>
+      <div class="profile-card__content">
+        <span class="section-kicker">Experience</span>
+        <h3>Youtu</h3>
+        <p>Research Intern · 2026–Present</p>
+      </div>
+      <img class="profile-card__logo" src="/images/Experience/youtu.png" alt="Youtu logo" loading="lazy" />
     </article>
   </div>
 </section>

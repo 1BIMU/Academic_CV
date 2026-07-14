@@ -372,6 +372,10 @@ html[data-theme="dark"] .research-card__figure {
 
 .profile-card {
   position: relative;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
   padding: 1.2rem 1.25rem;
   border: 1px solid var(--global-border-color);
   border-radius: 14px;
@@ -380,14 +384,27 @@ html[data-theme="dark"] .research-card__figure {
 }
 
 .profile-card::after {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 4rem;
-  height: 4rem;
-  border-radius: 0 0 0 100%;
-  background: var(--academic-accent-soft);
-  content: "";
+  display: none;
+}
+
+.profile-card__content {
+  min-width: 0;
+}
+
+.profile-card__logo {
+  flex: 0 0 auto;
+  width: 3.5rem;
+  height: 3.5rem;
+  margin: 0;
+  border-radius: 10px;
+  object-fit: contain;
+  background: #fff;
+  box-shadow: 0 0 0 1px rgba(15, 23, 42, 0.06);
+}
+
+.profile-card__logo--wide {
+  width: clamp(5.5rem, 11vw, 7rem);
+  padding: 0.35rem;
 }
 
 .profile-card h3 {
@@ -467,6 +484,10 @@ html[data-theme="dark"] .research-card__figure {
 
   .profile-row {
     grid-template-columns: 1fr;
+  }
+
+  .profile-card__logo--wide {
+    width: 6.5rem;
   }
 
   .news-list li {
