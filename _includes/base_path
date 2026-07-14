@@ -1,5 +1,14 @@
+{% comment %}
+  Keep internal links same-origin. This lets both the apex domain and the www
+  domain load their own CSS, JavaScript, images, and pages without crossing to
+  a hostname whose TLS certificate may not be valid.
+
+  Use absolute_base_path only where an absolute public URL is required, such
+  as canonical metadata, social sharing, or third-party comment embeds.
+{% endcomment %}
+{% assign base_path = site.baseurl | default: "" %}
 {% if site.url %}
-  {% assign base_path = site.url | append: site.baseurl %}
+  {% assign absolute_base_path = site.url | append: site.baseurl %}
 {% else %}
-  {% assign base_path = site.github.url %}
+  {% assign absolute_base_path = site.github.url %}
 {% endif %}
