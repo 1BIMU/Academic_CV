@@ -4,7 +4,6 @@
   {% if publication.header.teaser %}
     <a class="research-card__figure" href="{{ base_path }}{{ publication.url }}" aria-label="Read {{ publication.title | strip_html }}">
       <img src="{{ base_path }}{{ publication.header.teaser }}" alt="Preview of {{ publication.title | strip_html }}" loading="lazy" />
-      <span class="research-card__view" aria-hidden="true">View paper <span>↗</span></span>
     </a>
   {% endif %}
 
