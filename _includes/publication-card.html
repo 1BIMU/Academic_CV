@@ -1,0 +1,40 @@
+{% include base_path %}
+{% assign publication = include.publication %}
+<article class="research-card reveal" data-reveal>
+  {% if publication.header.teaser %}
+    <a class="research-card__figure" href="{{ base_path }}{{ publication.url }}" aria-label="Read {{ publication.title | strip_html }}">
+      <img src="{{ base_path }}{{ publication.header.teaser }}" alt="Preview of {{ publication.title | strip_html }}" loading="lazy" />
+    </a>
+  {% endif %}
+
+  <div class="research-card__body">
+    <div class="research-card__meta">
+      <span class="venue-badge">{{ publication.venue }}</span>
+      {% if publication.author_note %}<span>{{ publication.author_note }}</span>{% endif %}
+    </div>
+
+    <h3 class="research-card__title">
+      <a href="{{ base_path }}{{ publication.url }}">{{ publication.title }}</a>
+    </h3>
+
+    {% if publication.authors %}
+      <div class="research-card__authors">{{ publication.authors }}</div>
+    {% endif %}
+
+    {% if publication.excerpt %}
+      <div class="research-card__summary">{{ publication.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</div>
+    {% endif %}
+
+    <div class="research-card__actions" aria-label="Publication links">
+      {% if publication.arxivurl %}<a href="{{ publication.arxivurl }}" target="_blank" rel="noopener">Paper <span aria-hidden="true">↗</span></a>{% endif %}
+      {% if publication.githuburl %}<a href="{{ publication.githuburl }}" target="_blank" rel="noopener">Code <span aria-hidden="true">↗</span></a>{% endif %}
+      {% if publication.paperurl and publication.paperurl != publication.arxivurl %}<a href="{{ publication.paperurl }}" target="_blank" rel="noopener">PDF <span aria-hidden="true">↗</span></a>{% endif %}
+      {% if publication.citation %}
+        <button class="citation-copy" type="button" data-copy-citation aria-label="Copy BibTeX citation">
+          <i class="fas fa-copy" aria-hidden="true"></i><span data-copy-label>Copy BibTeX</span>
+        </button>
+        <textarea class="citation-source" aria-hidden="true" tabindex="-1">{{ publication.citation }}</textarea>
+      {% endif %}
+    </div>
+  </div>
+</article>

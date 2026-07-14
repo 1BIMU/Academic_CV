@@ -2,339 +2,70 @@
 permalink: /
 title: "Tianyi Wang"
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
 
-Hi!👋🏻 I am Tianyi Wang, an undergraduate student majored in Computer Science at Beijing University of Posts and Telecommunications. My current focus is post-training algorithms, especially reinforcement learning. I am also highly interested in optimizer design, implementation, and reproduction.
+<section class="intro-block reveal" data-reveal>
+  <span class="intro-block__eyebrow">Undergraduate Researcher · BUPT</span>
+  <p class="intro-block__lead">I work on post-training algorithms for large language models, with a focus on reinforcement learning and reliable optimization.</p>
+  <p class="intro-block__text">My current research explores stable and efficient learning for long-horizon reasoning. I am also interested in optimizer design, implementation, and reproducible machine learning systems.</p>
+  <div class="intro-actions" aria-label="Profile links">
+    <a href="https://github.com/1BIMU/Academic_CV/raw/refs/heads/master/main_en.pdf">View CV <span aria-hidden="true">↗</span></a>
+    <a href="/publications/">Publications</a>
+    <a href="mailto:bimu@bupt.edu.cn">Email</a>
+    <a href="https://github.com/1BIMU" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+  </div>
+</section>
 
-If you want a quick overview of my work, start with these pages:
-
-* [CV](https://github.com/1BIMU/Academic_CV/raw/refs/heads/master/main_en.pdf)
-* [Publications](/publications/)
-* [Blog Posts](/year-archive/)
-
-News
-
-* 2026.04 🎉 SPPO was accepted to ACL 2026
-* 2026.04 🎉 APO was accepted to ICML 2026
-* 2026.05 🎉 SPPO was selected as Oral presentation in ACL
-
-Selected Works
-======
-
-<style>
-.publication {
-  display: flex;
-  gap: 2rem;
-  margin-bottom: 2.5rem;
-  padding: 1.5rem;
-  background: #ffffff;
-  border: 1px solid #e5e7eb;
-  border-radius: 8px;
-  transition: box-shadow 0.3s ease;
-}
-
-.publication:hover {
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-}
-
-.publication-image {
-  flex-shrink: 0;
-  width: 240px;
-  height: 180px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.publication-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  padding: 0;
-  display: block;
-  background: #ffffff;
-  border-radius: 0;
-}
-
-.publication-content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.publication-title {
-  font-size: 1.15rem;
-  font-weight: 600;
-  margin: 0 0 0.5rem;
-  line-height: 1.4;
-  color: #111;
-}
-
-.publication-meta {
-  font-size: 0.9rem;
-  color: #666;
-  margin-bottom: 0.75rem;
-  font-weight: 500;
-}
-
-.publication-authors {
-  font-size: 0.85rem;
-  color: #555;
-  line-height: 1.5;
-  margin-bottom: 0.75rem;
-  font-style: italic;
-}
-
-.publication-authors strong {
-  font-weight: 600;
-  color: #111;
-  font-style: normal;
-}
-
-.publication-summary {
-  font-size: 0.9rem;
-  line-height: 1.6;
-  color: #555;
-  margin-bottom: 1rem;
-}
-
-.publication-links {
-  display: flex;
-  gap: 0.75rem;
-}
-
-.publication-links a {
-  display: inline-block;
-  padding: 0.45rem 1rem;
-  background: #f0f4f8;
-  color: #2563eb;
-  text-decoration: none;
-  border-radius: 6px;
-  font-size: 0.85rem;
-  font-weight: 600;
-  transition: all 0.2s ease;
-}
-
-.publication-links a:hover {
-  background: #2563eb;
-  color: #ffffff;
-}
-
-html[data-theme="dark"] .publication {
-  background: #2d2d2d;
-  border-color: #444;
-}
-
-html[data-theme="dark"] .publication:hover {
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-}
-
-html[data-theme="dark"] .publication-image img {
-  background: #2d2d2d;
-}
-
-html[data-theme="dark"] .publication-title {
-  color: #f3f3f3;
-}
-
-html[data-theme="dark"] .publication-meta {
-  color: #aaa;
-}
-
-html[data-theme="dark"] .publication-authors {
-  color: #bbb;
-}
-
-html[data-theme="dark"] .publication-authors strong {
-  color: #f3f3f3;
-}
-
-html[data-theme="dark"] .publication-summary {
-  color: #bbb;
-}
-
-html[data-theme="dark"] .publication-links a {
-  background: #3a3a3a;
-  color: #5cb3f0;
-}
-
-html[data-theme="dark"] .publication-links a:hover {
-  background: #5cb3f0;
-  color: #1a1a1a;
-}
-
-@media (max-width: 768px) {
-  .publication {
-    flex-direction: column;
-    gap: 1rem;
-  }
-  
-  .publication-image {
-    width: 100%;
-    height: 200px;
-  }
-}
-
-.cv-block {
-  display: flex;
-  gap: 1.75rem;
-  align-items: stretch;
-  margin: 1.75rem 0 2.5rem;
-  padding: 1.25rem;
-  border: 1px solid #e5e7eb;
-  border-radius: 10px;
-  background: #ffffff;
-}
-
-.cv-block-image {
-  flex: 0 0 240px;
-}
-
-.cv-block-image img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  max-height: 180px;
-  object-fit: contain;
-  border-radius: 8px;
-  background: #ffffff;
-}
-
-.cv-block-content {
-  flex: 1;
-}
-
-.cv-block-content h2 {
-  margin-top: 0;
-  margin-bottom: 0.75rem;
-}
-
-.cv-meta {
-  margin: 0 0 0.85rem;
-  color: #4b5563;
-  line-height: 1.6;
-}
-
-.cv-list {
-  margin: 0;
-  padding-left: 1.2rem;
-  line-height: 1.7;
-}
-
-html[data-theme="dark"] .cv-block {
-  background: #2d2d2d;
-  border-color: #444;
-}
-
-html[data-theme="dark"] .cv-block-image img {
-  background: #2d2d2d;
-}
-
-html[data-theme="dark"] .cv-meta {
-  color: #bbb;
-}
-
-@media (max-width: 768px) {
-  .cv-block {
-    flex-direction: column;
-  }
-
-  .cv-block-image {
-    flex-basis: auto;
-  }
-}
-</style>
-
-<div class="publications-list">
-  <div class="publication">
-    <div class="publication-image">
-      <img src="/images/publications/SPPO.png" alt="SPPO paper" />
-    </div>
-    <div class="publication-content">
-      <div>
-        <h3 class="publication-title">SPPO: Sequence-Level PPO for Long-Horizon Reasoning</h3>
-        <div class="publication-meta">ACL 2026 Oral · Co-first Author</div>
-        <div class="publication-authors"><strong>Tianyi Wang</strong>*, Yixia Li*, Long Li, Yibiao Chen, Shaohan Huang, Yun Chen, Peng Li, Yang Liu, Guanhua Chen</div>
-        <div class="publication-summary">Reformulates long-horizon reasoning as a sequence-level contextual bandit with a decoupled scalar value function to improve stability and reduce memory cost.</div>
-      </div>
-      <div class="publication-links">
-        <a href="https://arxiv.org/abs/2604.08865" target="_blank">arXiv</a>
-        <a href="https://github.com/sustech-nlp/SPPO" target="_blank">GitHub</a>
-      </div>
+<section class="academic-section reveal" data-reveal aria-labelledby="news-heading">
+  <div class="academic-section__heading">
+    <div>
+      <span class="section-kicker">Updates</span>
+      <h2 id="news-heading">News</h2>
     </div>
   </div>
+  <ul class="news-list">
+    <li><time datetime="2026-05">2026.05</time><span>SPPO was selected for an oral presentation at ACL 2026.</span></li>
+    <li><time datetime="2026-04">2026.04</time><span>SPPO was accepted to ACL 2026.</span></li>
+    <li><time datetime="2026-04">2026.04</time><span>APO was accepted to ICML 2026.</span></li>
+  </ul>
+</section>
 
-  <div class="publication">
-    <div class="publication-image">
-      <img src="/images/publications/APO.png" alt="APO paper" />
+<section class="academic-section" aria-labelledby="works-heading">
+  <div class="academic-section__heading reveal" data-reveal>
+    <div>
+      <span class="section-kicker">Research</span>
+      <h2 id="works-heading">Selected Works</h2>
     </div>
-    <div class="publication-content">
-      <div>
-        <h3 class="publication-title">Anchored Policy Optimization: Mitigating Exploration Collapse</h3>
-        <div class="publication-meta">ICML 2026 · Co-first Author</div>
-        <div class="publication-authors"><strong>Tianyi Wang</strong>*, Long Li*, Hongcan Guo, Yibiao Chen, Yixia Li, Yong Wang, Yun Chen, Guanhua Chen</div>
-        <div class="publication-summary">Introduces support-constrained rectification for RLVR training to mitigate exploration collapse and improve both Pass@1 and response diversity.</div>
-      </div>
-      <div class="publication-links">
-        <a href="https://arxiv.org/abs/2602.05717" target="_blank">arXiv</a>
-        <a href="https://github.com/1BIMU/APO_OFFICAL" target="_blank">GitHub</a>
-      </div>
-    </div>
+    <a href="/publications/">All publications →</a>
   </div>
+  <div class="research-list">
+    {% assign selected_pubs = site.publications | sort: 'date' | reverse %}
+    {% for publication in selected_pubs limit: 3 %}
+      {% include publication-card.html publication=publication %}
+    {% endfor %}
+  </div>
+</section>
 
-  <div class="publication">
-    <div class="publication-image">
-      <img src="/images/publications/DyJR.png" alt="DyJR paper" />
-    </div>
-    <div class="publication-content">
-      <div>
-        <h3 class="publication-title">DyJR: Preserving Diversity in Reinforcement Learning with Verifiable Rewards via Dynamic Jensen-Shannon Replay</h3>
-        <div class="publication-meta">Under Review</div>
-        <div class="publication-authors">Long Li, Zhijian Zhou, <strong>Tianyi Wang</strong>, Weidi Xu, Zuming Huang, Wei Chu, Zhe Wang, Shirui Pan, Chao Qu, Yuan Qi</div>
-        <div class="publication-summary">Introduces Dynamic Jensen-Shannon Replay to preserve diversity in reinforcement learning through a verifiable rewards mechanism.</div>
-      </div>
-      <div class="publication-links">
-        <a href="https://arxiv.org/abs/2603.16157" target="_blank">arXiv</a>
-      </div>
+<section class="academic-section" aria-labelledby="background-heading">
+  <div class="academic-section__heading reveal" data-reveal>
+    <div>
+      <span class="section-kicker">Background</span>
+      <h2 id="background-heading">Education & Experience</h2>
     </div>
   </div>
-</div>
-
-Education
-======
-
-<div class="cv-block" id="education">
-  <div class="cv-block-image">
-    <img src="/images/education/bupt.png" alt="Beijing University of Posts and Telecommunications" />
+  <div class="profile-row">
+    <article class="profile-card reveal" data-reveal id="education">
+      <span class="section-kicker">Education</span>
+      <h3>BUPT</h3>
+      <p>2023–2027</p>
+    </article>
+    <article class="profile-card reveal" data-reveal id="experience">
+      <span class="section-kicker">Experience</span>
+      <h3>Youtu</h3>
+      <p>Research Intern · 2026–Present</p>
+    </article>
   </div>
-  <div class="cv-block-content">
-    <h2>Bachelor Degree</h2>
-    <p class="cv-meta">Beijing University of Posts and Telecommunications<br />B.S. in Computer Science and Technology<br />2023.09 -- expected 2027.07</p>
-    <ul class="cv-list">
-      <li>GPA 3.76/4.00, ranked 20/360 in the major</li>
-      <li>CET-6 503, CET-4 571</li>
-      <li>Focused on post-training algorithms, reinforcement learning, and optimizer engineering</li>
-    </ul>
-  </div>
-</div>
-
-Experience
-======
-
-<div class="cv-block" id="experience">
-  <div class="cv-block-image">
-    <img src="/images/Experience/youtu.png" alt="Youtu internship" />
-  </div>
-  <div class="cv-block-content">
-    <h2>Internship</h2>
-    <p class="cv-meta">Youtu<br />Research Intern<br />Expected start: 2026.07.01<br />End date: TBD</p>
-    <ul class="cv-list">
-      <li>Internship focused on machine learning and reinforcement learning related research</li>
-      <li>Details will be updated once the internship officially starts</li>
-    </ul>
-  </div>
-</div>
+</section>
