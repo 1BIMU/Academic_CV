@@ -4,13 +4,17 @@
   {% if publication.header.teaser %}
     <a class="research-card__figure" href="{{ base_path }}{{ publication.url }}" aria-label="Read {{ publication.title | strip_html }}">
       <img src="{{ base_path }}{{ publication.header.teaser }}" alt="Preview of {{ publication.title | strip_html }}" loading="lazy" />
+      <span class="research-card__view" aria-hidden="true">View paper <span>↗</span></span>
     </a>
   {% endif %}
 
   <div class="research-card__body">
     <div class="research-card__meta">
-      <span class="venue-badge">{{ publication.venue }}</span>
-      {% if publication.author_note %}<span>{{ publication.author_note }}</span>{% endif %}
+      <div class="research-card__badges">
+        <span class="venue-badge{% if publication.venue contains 'Oral' %} venue-badge--highlight{% endif %}">{{ publication.venue }}</span>
+        {% if publication.author_note %}<span class="author-badge">{{ publication.author_note }}</span>{% endif %}
+      </div>
+      <time datetime="{{ publication.date | date: '%Y-%m-%d' }}">{{ publication.date | date: "%Y" }}</time>
     </div>
 
     <h3 class="research-card__title">
@@ -26,9 +30,9 @@
     {% endif %}
 
     <div class="research-card__actions" aria-label="Publication links">
-      {% if publication.arxivurl %}<a href="{{ publication.arxivurl }}" target="_blank" rel="noopener">Paper <span aria-hidden="true">↗</span></a>{% endif %}
-      {% if publication.githuburl %}<a href="{{ publication.githuburl }}" target="_blank" rel="noopener">Code <span aria-hidden="true">↗</span></a>{% endif %}
-      {% if publication.paperurl and publication.paperurl != publication.arxivurl %}<a href="{{ publication.paperurl }}" target="_blank" rel="noopener">PDF <span aria-hidden="true">↗</span></a>{% endif %}
+      {% if publication.arxivurl %}<a href="{{ publication.arxivurl }}" target="_blank" rel="noopener"><i class="fas fa-file-lines" aria-hidden="true"></i> Paper <span aria-hidden="true">↗</span></a>{% endif %}
+      {% if publication.githuburl %}<a href="{{ publication.githuburl }}" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i> Code <span aria-hidden="true">↗</span></a>{% endif %}
+      {% if publication.paperurl and publication.paperurl != publication.arxivurl %}<a href="{{ publication.paperurl }}" target="_blank" rel="noopener"><i class="fas fa-file-pdf" aria-hidden="true"></i> PDF <span aria-hidden="true">↗</span></a>{% endif %}
       {% if publication.citation %}
         <button class="citation-copy" type="button" data-copy-citation aria-label="Copy BibTeX citation">
           <i class="fas fa-copy" aria-hidden="true"></i><span data-copy-label>Copy BibTeX</span>
