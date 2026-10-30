@@ -66,7 +66,7 @@ redirect_from:
   </div>
   <article class="background-entry reveal" data-reveal>
     <div class="background-entry__image">
-      <img src="/images/education/bupt.png" alt="BUPT logo" loading="lazy" />
+      <img src="/images/education/bupt.png" alt="BUPT logo" width="180" height="54" loading="lazy" />
     </div>
     <div class="background-entry__content">
       <h3>Beijing University of Posts and Telecommunications</h3>
@@ -86,7 +86,7 @@ redirect_from:
   <div class="background-list">
     <article class="background-entry reveal" data-reveal>
       <div class="background-entry__image">
-        <img src="/images/Experience/seed.jpg" alt="ByteDance Seed logo" loading="lazy" />
+        <img src="/images/Experience/seed.jpg" alt="ByteDance Seed logo" width="180" height="42" loading="lazy" />
       </div>
       <div class="background-entry__content">
         <span class="background-entry__status background-entry__status--upcoming">Upcoming</span>
@@ -96,7 +96,7 @@ redirect_from:
     </article>
     <article class="background-entry reveal" data-reveal>
       <div class="background-entry__image">
-        <img src="/images/Experience/youtu.png" alt="Tencent Youtu logo" loading="lazy" />
+        <img src="/images/Experience/youtu.png" alt="Tencent Youtu logo" width="72" height="72" loading="lazy" />
       </div>
       <div class="background-entry__content">
         <span class="background-entry__status">Completed</span>
