@@ -2,7 +2,7 @@
 permalink: /
 title: "Tianyi Wang"
 body_class: academic-home
-excerpt: "Undergraduate researcher at BUPT working on LLM post-training, reinforcement learning, and optimization. Soon joining ByteDance Seed for research; previously a research intern at Tencent Youtu."
+excerpt: "Undergraduate researcher at BUPT working on LLM post-training, reinforcement learning, and optimization. Currently at ByteDance Seed for research; previously a research intern at Tencent Youtu."
 author_profile: true
 redirect_from:
   - /about/
@@ -14,8 +14,8 @@ redirect_from:
   <p class="intro-block__lead">I work on <strong>post-training algorithms</strong> for large language models, with a focus on reinforcement learning and reliable optimization.</p>
   <p class="intro-block__text">My current research explores stable and efficient learning for long-horizon reasoning. I am also interested in optimizer design, implementation, and reproducible machine learning systems.</p>
   <div class="research-update">
-    <span class="research-update__label"><span class="status-dot" aria-hidden="true"></span>Up next</span>
-    <p>I will soon be joining <strong>ByteDance Seed</strong> for research, following my research internship at <strong>Tencent Youtu</strong>.</p>
+    <span class="research-update__label"><span class="status-dot" aria-hidden="true"></span>Currently</span>
+    <p>I have joined <strong>ByteDance Seed</strong> for research, following my research internship at <strong>Tencent Youtu</strong>.</p>
   </div>
   <div class="intro-actions" aria-label="Profile links">
     <a href="https://github.com/1BIMU/Academic_CV/raw/refs/heads/master/main_en.pdf">View CV <span aria-hidden="true">↗</span></a>
@@ -33,8 +33,8 @@ redirect_from:
     </div>
   </div>
   <ul class="news-list">
-    <li class="news-list__latest"><time datetime="2026-10">2026.10</time><span><a href="/publication/dyjr-preserving-diversity-rl">DyJR</a> was accepted to <strong>NeurIPS 2026</strong>.</span></li>
-    <li><time datetime="2026-10">2026.10</time><span>I have completed my research internship at Tencent Youtu and will soon join <strong>ByteDance Seed</strong> for research.</span></li>
+    <li class="news-list__latest"><time datetime="2026-10">2026.10</time><span><a href="/publication/dyjr-preserving-diversity-rl">DyJR</a> was accepted to <strong>NeurIPS 2026</strong>. Congratulations to all the authors! 🎉</span></li>
+    <li><time datetime="2026-10">2026.10</time><span>I have joined <strong>ByteDance Seed</strong> for research after completing my research internship at Tencent Youtu.</span></li>
     <li><time datetime="2026-05">2026.05</time><span>SPPO was selected for an oral presentation at ACL 2026.</span></li>
     <li><time datetime="2026-04">2026.04</time><span>SPPO was accepted to ACL 2026.</span></li>
     <li><time datetime="2026-04">2026.04</time><span>APO was accepted to ICML 2026.</span></li>
@@ -89,9 +89,9 @@ redirect_from:
         <img src="/images/Experience/seed.jpg" alt="ByteDance Seed logo" width="180" height="42" loading="lazy" />
       </div>
       <div class="background-entry__content">
-        <span class="background-entry__status background-entry__status--upcoming">Upcoming</span>
+        <span class="background-entry__status background-entry__status--current">Current</span>
         <h3>ByteDance Seed</h3>
-        <p>Joining soon for research</p>
+        <p>Research Intern</p>
       </div>
     </article>
     <article class="background-entry reveal" data-reveal>

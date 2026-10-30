@@ -100,8 +100,8 @@ redirect_from:
     <img src="/images/Experience/seed.jpg" alt="ByteDance Seed logo" />
   </div>
   <div class="cv-block-content">
-    <h2>Upcoming Research</h2>
-    <p class="cv-meta">ByteDance Seed<br />Joining soon for research</p>
+    <h2>Current Research</h2>
+    <p class="cv-meta">ByteDance Seed<br />Research Intern<br />Current</p>
   </div>
 </div>
 
