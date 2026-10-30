@@ -5,9 +5,10 @@ category: conferences
 permalink: /publication/dyjr-preserving-diversity-rl
 excerpt: 'Introduces Dynamic Jensen-Shannon Replay to preserve diversity in reinforcement learning through verifiable rewards mechanism.'
 date: 2026-03-01
-venue: 'Under Review'
+venue: 'NeurIPS 2026'
 arxivurl: 'https://arxiv.org/abs/2603.16157'
-authors: 'Long Li, Zhijian Zhou, <strong>Tianyi Wang</strong>, Weidi Xu, Zuming Huang, Wei Chu, Zhe Wang, Shirui Pan, Chao Qu, Yuan Qi'
+authors: 'Long Li*, Zhijian Zhou*, <strong>Tianyi Wang</strong>*, Weidi Xu, Zuming Huang, Wei Chu, Zhe Wang, Shirui Pan, Chao Qu, Yuan Qi'
+author_note: 'Co-first Author'
 header:
   teaser: /images/publications/DyJR.png
 citation: '@misc{li2026dyjrpreservingdiversityreinforcement,

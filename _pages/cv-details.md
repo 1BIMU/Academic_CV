@@ -96,15 +96,21 @@ redirect_from:
 </div>
 
 <div class="cv-block" id="experience">
+  <div class="cv-block-content">
+    <h2>Upcoming Research</h2>
+    <p class="cv-meta">ByteDance Seed<br />Joining soon for research</p>
+  </div>
+</div>
+
+<div class="cv-block">
   <div class="cv-block-image">
     <img src="/images/Experience/youtu.png" alt="Youtu internship" />
   </div>
   <div class="cv-block-content">
     <h2>Experience</h2>
-    <p class="cv-meta">Youtu<br />Research Intern<br />Expected start: 2026.07.01<br />End date: TBD</p>
+    <p class="cv-meta">Tencent Youtu<br />Research Intern<br />2026 · Completed</p>
     <ul class="cv-list">
       <li>Internship focused on machine learning and reinforcement learning related research</li>
-      <li>Details will be updated once the internship officially starts</li>
     </ul>
   </div>
 </div>
