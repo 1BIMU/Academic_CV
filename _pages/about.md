@@ -57,36 +57,53 @@ redirect_from:
   </div>
 </section>
 
-<section class="academic-section" aria-labelledby="background-heading">
+<section class="academic-section" id="education" aria-labelledby="education-heading">
   <div class="academic-section__heading reveal" data-reveal>
     <div>
       <span class="section-kicker">Background</span>
-      <h2 id="background-heading">Education & Experience</h2>
+      <h2 id="education-heading">Education</h2>
     </div>
   </div>
-  <div class="background-grid">
-    <article class="education-card reveal" data-reveal id="education">
-      <span class="section-kicker">Education</span>
-      <img class="education-card__logo" src="/images/education/bupt.png" alt="BUPT logo" loading="lazy" />
+  <article class="background-entry reveal" data-reveal>
+    <div class="background-entry__image">
+      <img src="/images/education/bupt.png" alt="BUPT logo" loading="lazy" />
+    </div>
+    <div class="background-entry__content">
       <h3>Beijing University of Posts and Telecommunications</h3>
       <p>B.S. in Computer Science and Technology</p>
-      <span class="education-card__dates">2023–2027 <span>· Expected</span></span>
-    </article>
-    <div class="experience-panel reveal" data-reveal id="experience">
-      <h3 class="section-kicker">Research experience</h3>
-      <ol class="experience-list">
-        <li class="experience-item experience-item--upcoming">
-          <div class="experience-item__meta"><span class="experience-status">Upcoming</span></div>
-          <h4>ByteDance Seed</h4>
-          <p>Joining soon for research</p>
-        </li>
-        <li class="experience-item">
-          <div class="experience-item__meta"><time datetime="2026">2026</time><span>Completed</span></div>
-          <h4>Tencent Youtu</h4>
-          <p>Research Intern</p>
-          <img class="experience-item__logo" src="/images/Experience/youtu.png" alt="Tencent Youtu logo" loading="lazy" />
-        </li>
-      </ol>
+      <p class="background-entry__meta">2023.09 – Expected 2027.07</p>
     </div>
+  </article>
+</section>
+
+<section class="academic-section" id="experience" aria-labelledby="experience-heading">
+  <div class="academic-section__heading reveal" data-reveal>
+    <div>
+      <span class="section-kicker">Internships</span>
+      <h2 id="experience-heading">Experience</h2>
+    </div>
+  </div>
+  <div class="background-list">
+    <article class="background-entry reveal" data-reveal>
+      <div class="background-entry__image">
+        <img src="/images/Experience/seed.jpg" alt="ByteDance Seed logo" loading="lazy" />
+      </div>
+      <div class="background-entry__content">
+        <span class="background-entry__status background-entry__status--upcoming">Upcoming</span>
+        <h3>ByteDance Seed</h3>
+        <p>Joining soon for research</p>
+      </div>
+    </article>
+    <article class="background-entry reveal" data-reveal>
+      <div class="background-entry__image">
+        <img src="/images/Experience/youtu.png" alt="Tencent Youtu logo" loading="lazy" />
+      </div>
+      <div class="background-entry__content">
+        <span class="background-entry__status">Completed</span>
+        <h3>Tencent Youtu</h3>
+        <p>Research Intern</p>
+        <p class="background-entry__meta">2026</p>
+      </div>
+    </article>
   </div>
 </section>

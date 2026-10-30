@@ -138,95 +138,84 @@
   background: currentColor;
 }
 
-.background-grid {
-  display: grid;
-  grid-template-columns: 1fr 1.15fr;
-  gap: 1rem;
-}
-
-.education-card, .experience-panel {
-  min-width: 0;
-  padding: 1.3rem;
-  border: 1px solid var(--global-border-color);
-  border-radius: 10px;
-  background: var(--academic-card);
-  scroll-margin-top: 6rem;
-}
-
-.education-card {
-  &__logo {
-    display: block;
-    width: 7.5rem;
-    height: 3.5rem;
-    margin: 1rem 0;
-    padding: 0.25rem;
-    border-radius: 4px;
-    background: #fff;
-    object-fit: contain;
+// Keep profile entries in normal flow so logos and text cannot overlap.
+.academic-home {
+  .background-list {
+    display: grid;
+    gap: 1rem;
   }
 
-  h3 { margin: 0 0 0.65rem; font-size: 0.9rem; line-height: 1.5; }
-  p { margin: 0 0 1rem; font-size: 0.75rem; color: var(--academic-subtle); }
-  &__dates { font-size: 0.68rem; font-weight: 600; }
-  &__dates span { color: var(--academic-subtle); font-weight: 400; }
-}
-
-.experience-list {
-  margin: 1.2rem 0 0 0.2rem;
-  padding: 0;
-  list-style: none;
-}
-
-.experience-item {
-  position: relative;
-  margin: 0;
-  padding: 0 0 1.6rem 1.1rem;
-  border-left: 1px solid var(--global-border-color);
-
-  &::before {
-    position: absolute;
-    top: 0.3rem;
-    left: -4px;
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background: var(--academic-subtle);
-    content: "";
-  }
-
-  &--upcoming::before {
-    background: var(--academic-accent);
-    box-shadow: 0 0 0 4px var(--academic-accent-soft);
-  }
-
-  &:last-child { padding-bottom: 0; padding-right: 2.8rem; border-color: transparent; }
-  h4 { margin: 0.65rem 0 0.3rem; font-size: 0.95rem; letter-spacing: -0.02em; }
-  p { margin: 0; color: var(--academic-subtle); font-size: 0.73rem; }
-
-  &__meta {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.6rem;
+  .background-entry {
+    display: grid;
+    grid-template-columns: 10rem minmax(0, 1fr);
+    gap: 1.5rem;
     align-items: center;
-    color: var(--academic-subtle);
-    font-size: 0.6rem;
-    line-height: 1.5;
+    min-width: 0;
+    padding: 1.4rem;
+    border: 1px solid var(--global-border-color);
+    border-radius: 10px;
+    background: var(--academic-card);
   }
 
-  &__logo {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 2.3rem;
-    height: 2.3rem;
-    padding: 0.2rem;
-    border-radius: 5px;
+  .background-entry__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+    height: 5rem;
+    padding: 0.65rem;
+    border-radius: 6px;
     background: #fff;
-    object-fit: contain;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      object-fit: contain;
+    }
+  }
+
+  .background-entry__content {
+    min-width: 0;
+
+    h3 {
+      margin: 0 0 0.4rem;
+      font-size: 1rem;
+      line-height: 1.5;
+      overflow-wrap: break-word;
+    }
+
+    p {
+      margin: 0;
+      color: var(--academic-subtle);
+      font-size: 0.85rem;
+      line-height: 1.65;
+    }
+
+    .background-entry__meta {
+      margin-top: 0.5rem;
+      font-size: 0.75rem;
+    }
+  }
+
+  .background-entry__status {
+    display: inline-block;
+    margin-bottom: 0.6rem;
+    padding: 0.15rem 0.5rem;
+    border-radius: 4px;
+    color: var(--academic-subtle);
+    background: var(--global-footer-bg-color);
+    font-size: 0.65rem;
+    font-weight: 600;
+    line-height: 1.5;
+
+    &--upcoming {
+      color: var(--academic-accent-strong);
+      background: var(--academic-accent-soft);
+    }
   }
 }
-
-.experience-status { color: var(--academic-accent-strong); font-weight: 700; }
 
 html[data-theme="dark"] .academic-home {
   --global-bg-color: #17201e;
@@ -292,10 +281,20 @@ html[data-theme="dark"] .academic-home {
     .intro-block__text { font-size: 0.95rem; }
     .news-list li, .research-update p,
     .research-card__authors, .research-card__summary,
-    .education-card p, .experience-item p { font-size: 0.875rem; }
+    .background-entry__content p { font-size: 0.875rem; }
     .sidebar .author__content { padding-right: 0; }
     .sidebar .author__urls-wrapper { display: none; }
   }
 
-  .background-grid { grid-template-columns: 1fr; }
+  .academic-home .background-entry {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+    padding: 1.1rem;
+  }
+
+  .academic-home .background-entry__image {
+    width: 10rem;
+    max-width: 100%;
+    height: 4rem;
+  }
 }
